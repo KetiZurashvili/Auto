@@ -1,0 +1,157 @@
+*,
+*:before,
+*:after  {
+	box-sizing: inherit;
+    margin: 0;
+    padding:0;
+}
+html {
+  font-size:  62.5%; /*1rem = 10px; 10px/16px = 62.5%*/
+
+ /* @include  respond(tab-land) { //width < 900
+      font-size: 56.25%;  //1rem = 9px; 9/16 = 56.25 %
+    }
+  @include  respond(tab-port) { // <600
+      font-size: 50%; // 1rem = 8px, 8/16 = 50%
+    }
+  @include  respond(big-desktop) {
+      font-size: 75%;  // 1rem = 12px, 12/16 = 75%
+    }*/
+}
+
+body {
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.services {
+  position: relative;
+  display: block;
+  text-align: center;
+  @include respond(phone) {
+          padding-bottom: 80px;
+        }
+
+  .servicesHeading {
+    padding: 100px 0;
+  }
+  .servicesInfo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+        @include respond(big-desktop) {
+          padding: 0 10%;
+        }
+        @include respond(ipad) {
+          padding: 0 40px;
+        }
+        @include respond(phone) {
+            grid-template-columns: 1fr;
+            padding: 0 50px;
+        }
+
+    .infoSmaller  {
+      width: 100%;
+      background-color: $color-grey;
+      padding: 70px 0;
+
+      .modifyImg {
+          max-width: 195px;
+          max-height: 195px;
+        }
+      .buyImg {
+          max-width: 235px;
+          max-height: 215px;
+      }
+      .repairImg{
+        max-width: 173px;
+        max-height: 178px;
+      }
+      .infoSmallerTXT {
+        margin-top: 75px;
+      }
+    }
+  }
+  .servicesAnimation {
+    height: 500px;
+    width: 100%;
+    padding-top: 50px;
+
+
+  }
+}
+
+.contact {
+  position: relative;
+ display: grid;
+ grid-template-columns: repeat(12, 1fr);
+ grid-template-rows: repeat(5, 1fr);
+ position: relative;
+
+  .map {
+    grid-column: 1/13;
+    grid-row: 1/5;
+    overflow: hidden;
+    @include  respond(big-desktop) {
+      grid-column: 2/12;
+   }
+
+  }
+  .contactContent {
+    grid-column: 3/11;
+    grid-row: 3/6;
+    height: 58.5rem;
+    z-index: 3;
+    display: inline-flex;
+        @include  respond(ipad) {
+        grid-column: 1/13;
+        }
+        @include  respond(phone) {
+        grid-column: 1/13;
+        }
+      
+      .contactInfo {
+        font-family: robotoCon-bold;
+        font-size: 5rem;
+        text-transform: lowercase; 
+
+        .icons {
+          margin-top: 100%;
+        }
+      }
+  }
+
+}
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  border-top: 2px solid $color-grey;
+  font-size: 16px;
+  font-family: roboto-thin;
+  color: $text-black;
+  @include  respond(phone) {
+        margin-top: 160px;
+        }
+}
+
+

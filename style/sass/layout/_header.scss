@@ -1,0 +1,99 @@
+header {
+	background: rgba(255,255,255, 0.7);
+	display: block;
+	position: fixed;
+	z-index: 400;
+  	
+  	.headerTop {
+	    display: flex;
+	    justify-content: space-between;
+    	z-index: 150;
+
+    	.logo img {
+		    width: 40rem;
+		    height: 19rem;
+		    padding: 2rem;
+		  	position: absolute;
+		    @include respond(phone) {
+		          width: 25rem;
+		          height: 12rem;
+		    }
+		}
+  }
+  .toggleIcon {
+  	width: 30px;
+  	height: 40px;
+  	cursor: pointer;
+			
+			position: fixed;
+			right: 40px;
+			top: 40px;
+			z-index: 140;
+
+		.hamburger,
+		.hamburger:before, 
+		.hamburger:after {
+			content: '';
+			position: absolute;
+			width: 45px;
+			height: 3px;
+			background-color: $color-white;
+			box-shadow: 0 2px 5px rgba(0, 0, 0, .1);
+			transition: .5s;
+		}
+		.hamburger:before {
+			top: 10px;
+		}
+		.hamburger:after {
+			top: -10px;
+		}
+
+	}
+	.toggleIcon.active .hamburger {
+		background: rgba(0, 0, 0, 0);
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
+	}
+	.toggleIcon.active .hamburger:after {
+		top: 0;
+		transform: rotate(45deg);
+		background: $color-red;
+	}
+	.toggleIcon.active .hamburger:before {
+		top: 0;
+		transform: rotate(135deg);
+				background: $color-red;
+
+	}
+  nav {
+  	height: 0;
+  	overflow: hidden;
+  	width: 100vw;
+		ul {
+			margin-top: 200px;
+			margin-left: 100px;
+			
+
+			li {
+				list-style-type: none;
+
+				a {
+					text-decoration: none;
+					font-family: robotoCon-bold;
+					font-size: 72px;
+					color: $text-black;
+				}
+			}
+		}
+	}
+	nav.open {
+		height: 100vh;
+		transition: .5s;
+
+		.logo img {
+			color: red;
+		}
+	}
+}
+
+
+

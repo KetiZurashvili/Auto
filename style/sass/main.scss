@@ -1,0 +1,40 @@
+/*fonts*/
+@font-face {
+    font-family: myriad;
+    src: url(../../fonts/MyriadPro-Regular.otf);
+}
+@font-face {
+    font-family: roboto-light;
+    src: url(../../fonts/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: roboto-thin;
+    src: url(../../fonts/Roboto-Thin.ttf);
+}
+@font-face {
+    font-family: robotoCon-bold;
+    src: url(../../fonts/RobotoCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: robotoCon-light;
+    src: url(../../fonts/RobotoCondensed-Light.ttf);
+}
+
+
+/*scss files*/
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "layout/grid";
+@import "layout/header";
+
+
+/*@import "components/navigation";*/
+@import "components/slider";
+@import "components/services";
+@import "components/headings";
+@import "components/animation";
+@import "components/contact";
+@import "components/forms";
+

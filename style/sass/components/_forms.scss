@@ -1,0 +1,279 @@
+.contactContent {
+	font-family: robotoCon-light;
+	font-size: 1.6rem;
+	/*display: flex;*/
+	/*display: none;*/
+	/*grid-template-columns: repeat(8, 1fr);*/
+
+
+
+	.contactInfo {
+		width: 40%;
+		padding: 4rem;
+		background-color: grey;
+
+		@include  respond(ipad) {
+				display: none;
+			}
+		@include  respond(phone) {
+				display: none;
+			}
+
+
+		.icons {
+			text-align: center;
+			.lowerTXT {
+				text-transform: lowercase;
+			}
+		}
+
+	}
+
+
+
+
+
+	.contactForms {
+		position: relative;
+		width: 60%;
+		background: $color-white;
+		padding: 2rem;
+		text-align: center;
+		font-size: 1.6rem;
+		/*font-family: robotoCon-light;*/
+
+		@include  respond(ipad) {
+				width: 100%;
+			}
+		@include  respond(phone) {
+				width: 100%;
+			}
+
+
+
+		.formReal {
+			display: grid;
+			grid-gap: 2rem;
+			padding: 0;
+			grid-template-columns: 1fr 1fr;
+			/*@include  respond(ipad) {
+				grid-template-columns: 1fr;
+				background-color: $color-grey;
+			}*/
+			@include  respond(phone) {
+				grid-template-columns: 1fr;
+				background-color: $color-grey;
+			}
+			
+			.contactLeft {
+
+				.form-control {
+					width: 100%;
+					margin: 3rem 0;
+					height: 40px;
+					background-color: $grey-light;
+					border: transparent;
+					@include  respond(ipad) {
+				        width: 80%;
+				        }
+				        @include  respond(phone) {
+				       	width: 80%;
+
+				        }
+				}
+				.first-input, .last-input {
+					margin: 0;
+
+				}
+			}
+			.contactRight {
+				/*background-color: $color-grey;*/
+				display: block;
+				text-align: left;
+				position: relative;
+
+				@include  respond(ipad) {
+				    padding: 3rem;
+
+
+				    }
+				@include  respond(phone) {
+				    padding: 3rem;
+
+				    }
+
+				
+
+			.radio-inline {
+				cursor: pointer;
+				position: relative;
+				padding-left: 25px;
+
+				input {
+					display: none;
+				}
+				.circle {
+					display: inline-block;
+					width: 20px;
+					height: 20px;
+					border: 1px solid $color-grey;
+					position: absolute;
+					left: 0;
+					top: 0;
+					border-radius: 50%;
+					border: 1px solid $grey-dark;
+				}
+				&:hover .circle{
+					background-color: #ccc;
+
+				}
+				& input:checked + .circle {
+					background-color: $color-red;
+				}
+				& input:checked + .circle:after {
+					content: "";
+					height: 10px;
+					width: 10px;
+					background-color: $color-grey;
+					position: absolute;
+					border-radius: 50%;
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+
+
+				}
+			}
+				
+				.formSubmit {
+					width: 80px;
+					height: 40px;
+					border: transparent;
+					background: $color-grey;
+					position: absolute;
+					right: 0;bottom: 0;
+					margin-top: 20px;
+
+					/*transform: translate(50px, 40px);*/
+
+					
+				}
+
+				
+				.checkboxes {
+					
+					line-height: 200%;
+
+					/*margin-bottom: 40px;*/
+					p {
+						margin-left: 1rem;
+					}
+					@include  respond(big-desktop) {
+							margin-top: 10rem;
+						}
+
+					.checkbox-style {
+						position: relative;
+						/*margin-bottom: 25px;*/
+						margin-left: 30px;
+
+
+						input {
+							display: none;
+
+						}
+						.square {
+							position: absolute;
+							left: -30px;
+							top: 3px;
+							width: 15px;
+							height: 15px; 
+							border: 1px solid $grey-dark;
+
+						}
+
+					&:hover .square {
+						background-color: #ccc;
+					}
+					& input:checked + .square {
+					background-color: $color-red;
+					}
+					& input:checked + .square:after {
+					content: "";
+					height: 7px;
+					width: 7px;
+					background-color: $grey-dark;
+					position: absolute;
+					/*border-radius: 50%;*/
+					left: 50%;
+					top: 50%;
+					transform: translate(-50%, -50%);
+				}
+
+
+					}
+
+				}
+
+			}
+
+
+		}
+
+		
+		 
+	}
+	
+}
+.headingSmallscreen {
+	padding-bottom: 4rem;
+	margin-top: 2rem;
+	@include respond(phone){
+		background: $color-grey;
+
+	}
+				    } 
+.contactInfoSecond {
+	.wrapSec {
+
+	display: flex;
+	justify-content: space-between;
+
+	.lowerTXT2 {
+		text-transform: lowercase;
+		/*justify-content: flex-start;*/
+	}
+	.icons {
+		padding: 5px;
+		/*justify-content: end;*/
+	}
+}
+
+@include respond(phone) {
+	text-align: center;
+	
+	.lowerTXT2 {
+		font-size: 20px;
+	}
+	.icons img {
+		width: 34px;
+		height: 34px;
+	}
+}
+@include respond(big-desktop) {
+	display: none;
+}
+
+}
+
+
+
+
+/*@include  respond(phone) {
+	 .contactForms {
+		padding: 0;
+		margin: 0;
+
+	}			
+} */
+

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Auto</title>
+	<meta charset="UTF-8">
+	  <meta name="description" content="Website for autos">
+	  <meta name="keywords" content="HTML,CSS,jQuery,JavaScript">
+	  <meta name="author" content="authors">
+	  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- icons  -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- css   -->
+	<link rel="stylesheet" type="text/css" href="style/css/style.css">
+	<!-- jQuery -->
+	<script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/myCode.js"></script>
+	<!-- slider links -->
+	<link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+	<!-- styyyylleeeee  -->
+	<style>
+		.s_slide { background-position: 50% 50%; background-size: cover; }
+	</style>
+</head>
+<body>
+<header>
+	<div class="toggleIcon">
+			<div class="hamburger"></div>
+		</div>
+	<div class="headerTop">
+		<div class="logo"><img src="images/logo-white.svg"></div>
+		
+	</div>
+	
+	<nav>
+		<ul>
+			<li><a href="#sliderId" class="scroll">HOME</a></li>
+			<li><a href="#servicesId" class="scroll">SERVICES</a></li>
+			<li><a href="#contactId" class="scroll">CONTACT</a></li>
+		</ul>
+	</nav>
+</header>
+
+<!-- section slider -->
+	<section class="slider" id="sliderId">
+		<div class="the_slider"></div>
+	</section>
+<!-- section services -->
+	<section class="services"  id="servicesId">
+		<div class="heading servicesHeading" >the corner garage for collector cars</div>
+		<div class="servicesInfo">
+				<div class="infoSmaller">
+					<img src="images/modify.svg" class="modifyImg" alt="modify img" height="100px">
+					<div class="heading infoSmallerTXT">modify</div>
+				</div>
+				<div class="infoSmaller">
+					<img src="images/buy.svg" class="buyImg" alt="buy" height="100px">
+					<div class="heading infoSmallerTXT">buy</div>
+				</div>
+				<div class="infoSmaller ">
+					<img src="images/repair.svg" class="repairImg" alt="repair" height="100px">
+					<div class="heading infoSmallerTXT">repair</div>
+				</div>
+		</div>
+		<div class="servicesAnimation">
+			<div class="background">
+				<img src="images/busLast.svg" alt="bus"  class="bus">
+			</div>
+		</div>
+	</section>
+
+<!-- section contact -->
+<section class="contact" id="contactId">
+<div class="map">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2974.43559915947!2d44.77177621517704!3d41.79737577922863!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40446e78613dc133%3A0x7dc6e4f283f28996!2sInternational+Black+Sea+University!5e0!3m2!1sen!2sge!4v1546675694326" width="1500px" height="895px" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</div>
+	<div class="contactContent">
+		<div class="contactInfo">
+			<div class="heading">contact information</div>
+			<div class="icons">
+				<p class="lowerTXT">click to view</p>
+				<img src="images/google-plus.svg" width="49px" height="49px" alt="g-plus">
+				<img src="images/fb.svg" width="49px" height="49px" alt="fb">
+				<img src="images/twitter.svg" width="49px" height="49px" alt="twitter">
+			</div>
+		</div>
+		<div class="contactForms">
+			<div class="heading headingSmallscreen">get in touch</div>
+			<form class="formReal"> 
+			<div class="contactLeft">
+				<input type="text" name="name" placeholder="name" class="form-control first-input">
+				<input type="email" name="email" placeholder="email" class="form-control">
+				<textarea class="form-control" style="height: 40px"  placeholder="subject"></textarea>
+				<textarea class="form-control last-input" style="height: 125px" placeholder="text"></textarea>
+			</div>
+
+			<div class="contactRight">
+				 <label class="radio-inline radioL">
+				      <input type="radio" name="optradio" class="radioButton" required>Male
+				      <span class="circle"></span>
+				    </label>
+				    <label class="radio-inline">
+				      <input type="radio" name="optradio" class="radioButton" required>Female
+				      <span class="circle"></span>
+				    </label>
+
+
+				    <div class="checkboxes">
+				    	<p>Sign up for newsletter:</p>
+				    	<label class="checkbox-style">
+				    	<input type="checkbox" name="vehicle1" value="Bike" required> recieve images
+				    	<span class="square"></span></label>
+				    	<br>
+					 	<label class="checkbox-style"><input type="checkbox" name="vehicle2" value="Car" required> recieve promotions
+						<span class="square"></span></label>
+					 	<br>
+					  	<label class="checkbox-style"><input type="checkbox" name="vehicle3" value="Boat" required> recieve updates
+					  	<span class="square"></span></label>
+					  	<br>
+					  	<label class="checkbox-style"><input type="checkbox" name="vehicle3" value="Boat" required> recieve job offers
+					  	<span class="square"></span></label>
+
+						<input type="submit" value="Submit" class="formSubmit">
+
+				    </div>
+				  
+			</div>
+			
+			</form>
+			<div class="contactInfoSecond">
+	<div class="wrapSec">
+			<div class="lowerTXT2 heading">click to view</div>
+			<div class="icons">
+				<img src="images/google-plus.svg" width="49px" height="49px" alt="g-plus">
+				<img src="images/fb.svg" width="49px" height="49px" alt="fb">
+				<img src="images/twitter.svg" width="49px" height="49px" alt="twitter">
+			</div>
+</div>
+</div>
+		</div>
+
+</section>
+<footer>
+	<div class="rights">copyright 2019</div>
+	<div class="author">created by: Authors</div>
+</footer>
+
+
+
+
+
+<!-- jquery for slider -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+	<script src="js/slider/slicarousel.js"></script>
+	<script src="js/slider/main.js"></script>
+	<script type="text/javascript">
+
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-36251023-1']);
+	  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+	  _gaq.push(['_trackPageview']);
+
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+
+	</script>
+
+    </body>
+
+
+
+
+</html>

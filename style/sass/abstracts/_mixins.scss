@@ -1,0 +1,16 @@
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone {
+    @media (max-width: 670px) { @content }; 
+  }
+  @if $breakpoint == ipad {
+    @media (min-width: 670px) and (max-width: 900px ) { @content }; 
+  }
+  @if $breakpoint == big-desktop {
+    @media (min-width: 900px) { @content }; 
+  }
+}
+
+/*
+@include respond(ipad);
+
+*/
