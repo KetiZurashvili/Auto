@@ -24,7 +24,7 @@ header {
 		.AutoColor {
 			/*fill: red;*/
 		}
-		
+
   }
   .toggleIcon {
   	width: 30px;
@@ -76,8 +76,17 @@ header {
   	overflow: hidden;
   	width: 100vw;
 		ul {
-			margin-top: 200px;
-			margin-left: 100px;
+			margin-top: 300px;
+			margin-left: 400px;
+				
+			@include respond(ipad) {
+		          margin-left: 200px;
+		    }
+		    @include respond(phone) {
+		          margin-left:30px;
+		          margin-top: 170px;
+		    }
+			
 			
 
 			li {
@@ -88,6 +97,11 @@ header {
 					font-family: robotoCon-bold;
 					font-size: 72px;
 					color: $text-black;
+
+					@include respond(phone) {
+		        	
+		        	font-size: 50px;
+		    }
 				}
 			}
 		}
