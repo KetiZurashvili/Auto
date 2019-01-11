@@ -31,3 +31,10 @@ $(document).ready(function(){
 
 
 });
+
+//change color of logo 
+$(document).ready(function(){
+  $('.toggleIcon').click(function(){
+    $('.AutoColor').toggleClass('redColor');
+  });
+});

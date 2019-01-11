@@ -9,16 +9,22 @@ header {
 	    justify-content: space-between;
     	z-index: 150;
 
-    	.logo img {
+    	.logo #Layer_1 {
 		    width: 40rem;
 		    height: 19rem;
 		    padding: 2rem;
 		  	position: absolute;
+			/*fill: red;*/
 		    @include respond(phone) {
 		          width: 25rem;
 		          height: 12rem;
 		    }
+
 		}
+		.AutoColor {
+			/*fill: red;*/
+		}
+		
   }
   .toggleIcon {
   	width: 30px;
@@ -64,6 +70,7 @@ header {
 				background: $color-red;
 
 	}
+	
   nav {
   	height: 0;
   	overflow: hidden;
@@ -93,6 +100,14 @@ header {
 			color: red;
 		}
 	}
+
+	/*.toggleIcon.active .logo #Layer_1 {
+		display: none;
+	}*/
+
+	.redColor {
+			fill: red;
+		}
 }
 
 
