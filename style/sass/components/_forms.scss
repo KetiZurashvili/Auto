@@ -1,10 +1,7 @@
 .contactContent {
 	font-family: robotoCon-light;
 	font-size: 1.6rem;
-	/*display: flex;*/
-	/*display: none;*/
-	/*grid-template-columns: repeat(8, 1fr);*/
-
+	
 
 
 	.contactInfo {
@@ -40,7 +37,6 @@
 		padding: 2rem;
 		text-align: center;
 		font-size: 1.6rem;
-		/*font-family: robotoCon-light;*/
 
 		@include  respond(ipad) {
 				width: 100%;
@@ -56,10 +52,7 @@
 			grid-gap: 2rem;
 			padding: 0;
 			grid-template-columns: 1fr 1fr;
-			/*@include  respond(ipad) {
-				grid-template-columns: 1fr;
-				background-color: $color-grey;
-			}*/
+			
 			@include  respond(phone) {
 				grid-template-columns: 1fr;
 				background-color: $color-grey;
@@ -87,7 +80,6 @@
 				}
 			}
 			.contactRight {
-				/*background-color: $color-grey;*/
 				display: block;
 				text-align: left;
 				position: relative;
@@ -149,13 +141,20 @@
 					width: 80px;
 					height: 40px;
 					border: transparent;
+					outline: none;
 					background: $color-grey;
 					position: absolute;
 					right: 0;bottom: 0;
 					margin-top: 20px;
+					transition: .4s;
 
-					/*transform: translate(50px, 40px);*/
+				&:hover {
+					transform: translateY(-3px);
+					-webkit-box-shadow: 7px 11px 31px -6px rgba(0,0,0,0.75);
+					-moz-box-shadow: 7px 11px 31px -6px rgba(0,0,0,0.75);
+					box-shadow: 7px 11px 31px -6px rgba(0,0,0,0.75);
 
+				}
 					
 				}
 
@@ -164,7 +163,6 @@
 					
 					line-height: 200%;
 
-					/*margin-bottom: 40px;*/
 					p {
 						margin-left: 1rem;
 					}
@@ -241,11 +239,9 @@
 
 	.lowerTXT2 {
 		text-transform: lowercase;
-		/*justify-content: flex-start;*/
 	}
 	.icons {
 		padding: 5px;
-		/*justify-content: end;*/
 	}
 }
 
@@ -266,14 +262,9 @@
 
 }
 
-
-
-
-/*@include  respond(phone) {
-	 .contactForms {
-		padding: 0;
-		margin: 0;
-
-	}			
-} */
+.hoverIcons:hover {
+	background-color: $color-grey;
+	transition: .3s;
+	border-radius: 50%;
+}
 

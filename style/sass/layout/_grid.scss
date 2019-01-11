@@ -22,26 +22,6 @@ html {
 body {
   box-sizing: border-box;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .services {
   position: relative;
   display: block;
@@ -139,7 +119,7 @@ body {
         text-transform: lowercase; 
 
         .icons {
-          margin-top: 100%;
+          margin-top: 60%;
         }
       }
   }
@@ -155,7 +135,7 @@ footer {
   font-family: roboto-thin;
   color: $text-black;
   @include  respond(phone) {
-        margin-top: 160px;
+        margin-top: 250px;
         }
 }
 
