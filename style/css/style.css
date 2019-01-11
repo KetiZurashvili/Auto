@@ -150,8 +150,7 @@ header {
       width: 40rem;
       height: 19rem;
       padding: 2rem;
-      position: absolute;
-      /*fill: red;*/ }
+      position: absolute; }
       @media (max-width: 670px) {
         header .headerTop .logo #Layer_1 {
           width: 25rem;
@@ -211,10 +210,22 @@ header {
           text-decoration: none;
           font-family: robotoCon-bold;
           font-size: 72px;
-          color: #000000; }
+          color: #000000;
+          transition: .4s; }
           @media (max-width: 670px) {
             header nav ul li a {
               font-size: 50px; } }
+          header nav ul li a:hover {
+            background-image: linear-gradient(to top right, rgba(255, 0, 0, 0), red 80%, rgba(255, 0, 0, 0));
+            background-size: 400% 400%;
+            animation: linearBg .6s; }
+@keyframes linearBg {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 0% 50%; }
+  100% {
+    background-position: 0% 50%; } }
   header nav.open {
     height: 100vh;
     transition: .5s; }

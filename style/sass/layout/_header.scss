@@ -14,8 +14,8 @@ header {
 		    height: 19rem;
 		    padding: 2rem;
 		  	position: absolute;
-			/*fill: red;*/
-		    @include respond(phone) {
+			
+			@include respond(phone) {
 		          width: 25rem;
 		          height: 12rem;
 		    }
@@ -86,6 +86,8 @@ header {
 		          margin-left:30px;
 		          margin-top: 170px;
 		    }
+
+
 			
 			
 
@@ -97,13 +99,35 @@ header {
 					font-family: robotoCon-bold;
 					font-size: 72px;
 					color: $text-black;
+					transition: .4s;
+
 
 					@include respond(phone) {
 		        	
-		        	font-size: 50px;
-		    }
+		        		font-size: 50px;
+		   			
+		   			}
+
+		   		&:hover {
+		   		background-image: linear-gradient(to top right, rgba(255,0,0,0), rgba(255,0,0,1) 80%, rgba(255,0,0,0) );
+				background-size: 400% 400%;
+		   		animation: linearBg .6s;
+		    	}
+
+		    	@keyframes linearBg {
+		    		0% {
+		    			background-position: 0% 50% ;
+		    		}
+		    		50% {
+		    			background-position: 0% 50%  ;
+		    		}
+		    		100% {
+		    			background-position: 0% 50%;
+		    		}
+		    	}
 				}
 			}
+
 		}
 	}
 	nav.open {
