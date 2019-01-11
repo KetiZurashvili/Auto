@@ -322,18 +322,18 @@ header {
     right: 0;
     overflow: hidden;
     animation: drive 7s;
-    animation-play-state: paused; }
-  .servicesAnimation .background bus:hover {
-    animation-play-state: running; }
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused;
+    /*animation-iteration-count: 5;*/ }
+  .servicesAnimation .background .bus:hover {
+    animation-play-state: running;
+    -webkit-animation-play-state: running; }
 
 @keyframes drive {
   0% {
     right: 10%; }
   10% {
     right: 10%; }
-  /*50% {
-    right: 100%;
-  }*/
   100% {
     right: 120%; } }
 .contactInfo .infoBottom {
@@ -388,7 +388,8 @@ header {
         margin: 3rem 0;
         height: 40px;
         background-color: #F2F2F2;
-        border: transparent; }
+        border: transparent;
+        outline: none; }
         @media (min-width: 670px) and (max-width: 900px) {
           .contactContent .contactForms .formReal .contactLeft .form-control {
             width: 80%; } }
